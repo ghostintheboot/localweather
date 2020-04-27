@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Show Local Weather</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="ShowLocalWeatherCSS.css">
+  <link rel="stylesheet" type="text/css" href="queries.css">
+</head>
+
+
+<body>
+  <div class="container">
+    
+    <!-- HEADER -->
+    <div class="header">
+      <h1>Show Local Weather</h1>
+      <h3>Shows JSON data after getting the visitor's geolocation.</h3>
+    </div>
+    
+    <!-- LEFT SIDE -->
+    <div class="left-side">
+      <p class="left-titles"><strong>City: </strong></p>
+      <p class="fade left-api-data city-data">n/a</p>
+
+      <p class="left-titles"><strong>Description: </strong></p>
+      <p class="fade left-api-data weather-desc">n/a</p>
+
+      <p class="left-titles"><strong>Humidity: </strong></p>
+      <p class="fade left-api-data humidity-data">n/a</p>
+
+      <p class="left-titles"><strong>Wind speed: </strong></p>
+      <p class="fade left-api-data wind-data">n/a</p>
+      
+      <!-- RIGHT SIDE -->
+      <div class="right-side">
+        <div class="fade weather-icon"></div>
+        <div class="fade weather-number">72.5 &#8457;</div>
+        <br>
+        <button class="temp-btn">Switch to Celsius/Fahrenheit</button>
+      </div>
+      
+      <br/>
+      
+      <!-- BOTTOM -->
+      <div class="bottom-side">
+        <h2>Coordinates</h2>
+        <br>
+        <strong>Latitude: </strong><span class="fade lat-data">n/a</span>
+        <br>
+        <strong>Longitude: </strong><span class="fade lon-data">n/a</span>
+      </div>
+    </div> <!-- End of left-side div. -->
+    
+  </div> <!-- End of container div. -->
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="ShowLocalWeatherJS.js"></script>
+</body>
+</html>
