@@ -5,20 +5,20 @@
   <meta charset="utf-8">
   <title>Show Local Weather</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="ShowLocalWeatherCSS.css">
-  <link rel="stylesheet" type="text/css" href="queries.css">
+  <link rel="stylesheet" type="text/css" href="./css/ShowLocalWeatherCSS.css">
+  <link rel="stylesheet" type="text/css" href="./css/queries.css">
 </head>
 
 
 <body>
   <div class="container">
-    
+
     <!-- HEADER -->
     <div class="header">
       <h1>Show Local Weather</h1>
       <h3>Shows JSON data after getting the visitor's geolocation.</h3>
     </div>
-    
+
     <!-- LEFT SIDE -->
     <div class="left-side">
       <p class="left-titles"><strong>City: </strong></p>
@@ -32,7 +32,7 @@
 
       <p class="left-titles"><strong>Wind speed: </strong></p>
       <p class="fade left-api-data wind-data">n/a</p>
-      
+
       <!-- RIGHT SIDE -->
       <div class="right-side">
         <div class="fade weather-icon"></div>
@@ -40,9 +40,9 @@
         <br>
         <button class="temp-btn">Switch to Celsius/Fahrenheit</button>
       </div>
-      
+
       <br/>
-      
+
       <!-- BOTTOM -->
       <div class="bottom-side">
         <h2>Coordinates</h2>
@@ -52,10 +52,9 @@
         <strong>Longitude: </strong><span class="fade lon-data">n/a</span>
       </div>
     </div> <!-- End of left-side div. -->
-    
   </div> <!-- End of container div. -->
-  
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script src="ShowLocalWeatherJS.js"></script>
+
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/ShowLocalWeatherJS.js"></script>
 </body>
 </html>
