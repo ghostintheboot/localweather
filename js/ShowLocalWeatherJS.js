@@ -11,7 +11,7 @@ $(document).ready(function() {
     navigator.geolocation.getCurrentPosition(function(position) {
       lat = position.coords.latitude;
       long = position.coords.longitude;
-      let api = "http://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + long + "&appid=bb2b7ad82d3e658f25f44afaba107eae";
+      let api = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=bb2b7ad82d3e658f25f44afaba107eae`;
       // console.log(api);
 
       /* $.getJSON */
