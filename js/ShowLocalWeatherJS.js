@@ -7,7 +7,8 @@ $(document).ready(function() {
   $(".weather-icon").html('<img src="http://openweathermap.org/img/w/01d.png">');
 
   // Get geolocation.
-  if (navigator.geolocation) {
+  // TEST. Force geolocation.
+//   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(function(position) {
       lat = position.coords.latitude;
       long = position.coords.longitude;
@@ -109,5 +110,5 @@ $(document).ready(function() {
       $(".fade").hide(0).fadeIn(1250);
 
     }); // navigator.geolocation.getCurrentPosition end.
-  } // navigator.geolocation end.
+//   } // navigator.geolocation end.
 });
