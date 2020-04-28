@@ -1,0 +1,55 @@
+@media (min-width: 480px) {
+  .container {
+    font-size: 1rem;
+    margin-top: 60px;
+    width: 380px;
+  }
+
+  .header h1 {
+    font-size: 2.2rem;
+  }
+
+  .temp-btn {
+    font-weight: 700;
+  }
+}
+
+
+@media (min-width: 767px) {
+  .container {
+    font-size: 1.1rem;
+    margin-top: 30px;
+    width: 500px;
+  }
+
+  .header h1 {
+    font-size: 3rem;
+  }
+
+  .left-side {
+    padding-left: 20px;
+  }
+
+  .right-side {
+    height: 240px;
+    right: 20px;
+    width: 200px;
+  }
+
+  .weather-icon {
+    margin-top: 25px;
+  }
+
+  .weather-number {
+    font-size: 2.8rem;
+  }
+
+  .temp-btn {
+    font-size: 1rem;
+    width: 80%;
+  }
+
+  .bottom-side {
+    margin-bottom: 0;
+  }
+}
